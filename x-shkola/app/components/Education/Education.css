@@ -1,0 +1,128 @@
+.education {
+    background-image: url('./../../../public/bg.webp');
+    background-repeat: repeat; 
+    background-size: 100%; 
+}
+
+.education-container {
+    background: var(--grey);
+    border-radius: 25px;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.education-header {
+    padding: 48px 48px 52px 48px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.education-round {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: var(--beige);
+}
+
+.education-title {
+    text-align: center;
+}
+
+.education-body {
+    padding: 48px 130px 52px 130px;
+    display: flex;
+    gap: 20px;
+}
+
+.education-one {
+    width: 380px;
+    height: 100%;
+    border-radius: 25px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    background: var(--periwinkle);
+    transition: scale ease .3s;
+}
+
+.education-one img {
+    float: right;
+}
+
+.education-card-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.education-two {
+    width: calc(50% - 10px);
+    border-radius: 25px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    background: var(--yellow);
+    transition: scale ease .3s;
+}
+
+.education-free {
+    width: calc(50% - 10px);
+    border-radius: 25px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    background: var(--beige);
+    transition: scale ease .3s;
+}
+
+.education-four {
+    width: 100%;
+    border-radius: 25px;
+    padding: 40px 20px 20px 20px;
+    display: flex;
+    
+    gap: 12px;
+    background: var(--orange);
+
+    position: relative;
+    transition: scale ease .3s;
+}
+
+.education-four-text {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.education-four-img {
+    min-height: 120px;
+    min-width: 120px;
+}
+
+.four-rounds {
+    display: flex;
+    
+    width: 100%;
+    position: absolute;
+    top: -18px;
+    left: 0;
+    justify-content: space-around;
+}
+
+.four-round {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: var(--grey);
+}
+
+.education-one:hover,
+.education-two:hover,
+.education-free:hover,
+.education-four:hover {
+    scale: 1.02;
+    transition: scale ease .3s;
+}

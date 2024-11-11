@@ -1,0 +1,67 @@
+.main {
+    background-image: url('./../../../public/bg.webp');
+    background-repeat: repeat; 
+    background-size: 100%; 
+    background-position: -10px -10px; 
+}
+
+
+
+.main-container {
+    position: relative;
+}
+
+.main-container h1 {
+    padding-top: 84px;
+    padding-bottom: 47px;
+}
+
+.main-container h2 {
+    color: var(--orange);
+    text-align: center;
+    padding-bottom: 32px;
+} 
+
+.h3-green {
+    color: var(--dark-green);
+    text-align: center;
+}
+
+.line {
+    position: absolute;
+    top: 90px;
+    left: -60px;
+}
+
+.plane {
+    position: absolute;
+    top: 166px;
+    left: 0;
+}
+
+.rectangle {
+    position: absolute;
+    top: 73px;
+    right: 0;
+}
+
+.main-cards {
+    width: 100%;
+    padding: 84px 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.main-card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+    width: 280px;
+}
+
+.main-card h3 {
+    text-align: center;
+}

@@ -1,0 +1,75 @@
+.offer {
+    background-image: url('./../../../public/bg.webp');
+    background-repeat: repeat; 
+    background-size: 100%;
+    margin-top: 64px;
+}
+
+.offer-container {
+    padding: 52px 0 0 0;
+    position: relative;
+}
+
+.offer-plane {
+    position: absolute;
+    top: 190px;
+    left: 385px;
+}
+
+.offer-trian {
+    position: absolute;
+    top: 170px;
+    right: 138px;
+}
+
+.offer-header {
+    color: var(--dark-green);
+    text-align: center;
+}
+
+.offer-header p {
+    padding-top: 16px;
+    padding-bottom: 179px;
+}
+
+.offer-body {
+    display: flex;
+    justify-content: flex-end;
+    gap: 68;
+}
+
+.offer-one, .offer-free {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 166px;
+} 
+
+.offer-two {
+    min-width: 83px;
+}
+
+.offer-free {
+    justify-content: center;
+}
+
+.offer-card {
+    max-width: 480px;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.offer-card div {
+    width: 380px;
+
+}
+
+.offer-card span {
+    color: var(--orange);
+    font-size: 128px;
+    font-weight: 700;
+    position: absolute;
+    top: -80px;
+    left: -15;
+}

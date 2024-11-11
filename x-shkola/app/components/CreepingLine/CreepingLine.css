@@ -1,0 +1,31 @@
+.creeping-line {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    width: 100%;
+    background-color: var(--yellow); /* Цвет фона */
+    padding: 10px 0;
+    display: flex;
+  }
+  
+  .creeping-line .content {
+    display: flex;
+    animation: creeping 30s linear infinite; /* Настройте скорость здесь */
+  }
+  
+  .creeping-line .text {
+    margin-right: 60px; /* Расстояние между надписями */
+    font-size: 28px; /* Размер текста */
+    font-weight: 400;
+  }
+  
+  /* Анимация для непрерывного движения */
+  @keyframes creeping {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  

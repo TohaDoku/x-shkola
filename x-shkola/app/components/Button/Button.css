@@ -1,0 +1,11 @@
+.btn-primary {
+    background: var(--periwinkle);
+    padding: 12px 32px;
+    border-radius: 25px;
+    transition: background-color ease .3s;
+}
+
+.btn-primary:hover {
+    background: var(--periwinkle-hover);
+    transition: background-color ease .3s;
+}

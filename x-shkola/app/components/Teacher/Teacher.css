@@ -1,0 +1,49 @@
+.teacher {
+    padding: 84px 0;
+    max-width: 1078px;
+    margin: 0 auto;
+}
+
+.teacher-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.teacher-container h2 {
+    color: var(--dark-green);
+    text-align: center;
+    width: 100%;
+}
+
+.teacher-one {
+    max-width: 278px;
+}
+
+.teacher-two {
+    max-width: 380px;
+}
+
+.teacher-block {
+    position: relative; /* Это нужно для корректного позиционирования псевдоэлемента */
+    background: var(--periwinkle);
+    border-radius: 25px;
+    padding: 28px 28px 0 28px;
+    z-index: 99; /* Устанавливаем порядок наложения основного блока выше, чем у фона */
+}
+
+.teacher-block img {
+    z-index: 999;
+}
+
+.teacher-block-after {
+    position: absolute;
+    top: -10px; /* Смещение вниз */
+    left: 10px; /* Смещение вправо */
+    width: 100%;
+    height: 100%;
+    background: var(--yellow);
+    border-radius: 25px;
+    transform: rotate(3deg); /* Устанавливаем наклон */
+    z-index: 1; /* Размещаем под основным блоком */
+}
