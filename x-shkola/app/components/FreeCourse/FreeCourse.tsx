@@ -5,7 +5,7 @@ import Image from 'next/image';
 export default function FreeCourse() {
   return (
     <>
-    <div className="free-course">
+    <div id='free-course' className="free-course">
         <div className="container">
             <div className="free-course-container">
                 <Image

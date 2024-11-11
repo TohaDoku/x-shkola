@@ -6,14 +6,14 @@ export default function Header() {
     <div className="header">
         <div className="container">
             <div className="header-container">
-                <a className="header-logo" href="/">
+                <a className="header-logo" href="#">
                     <h3 className="h3-medium">X-SHKOLA</h3>
                 </a>
                 <nav className='header-nav'>
                     <ul className='header-ul'>
-                        <li className='header-li'><a className='header-li-a' href="">Программа курса</a></li>
-                        <li className='header-li'><a className='header-li-a' href="">Преподаватели</a></li>
-                        <li className='header-li'><a className='header-li-a' href="">Бесплатное занятие</a></li>
+                        <li className='header-li'><a className='header-li-a' href="#offer">Программа курса</a></li>
+                        <li className='header-li'><a className='header-li-a' href="#teacher">Преподаватели</a></li>
+                        <li className='header-li'><a className='header-li-a' href="#free-course">Бесплатное занятие</a></li>
                     </ul>
                 </nav>
                 <div className='header-phone'>

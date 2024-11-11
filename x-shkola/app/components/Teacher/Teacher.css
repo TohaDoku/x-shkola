@@ -1,13 +1,34 @@
 .teacher {
     padding: 84px 0;
-    max-width: 1078px;
-    margin: 0 auto;
+    z-index: 1;
+}
+
+.teacher {
+    position: relative;
+}
+
+.teacher::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('./../../../public/bg.webp');
+    background-repeat: repeat;
+    background-size: 20%;
+    background-position: -10px -10px;
+    opacity: 0.3; /* Установите нужный уровень прозрачности */
+    z-index: -1; /* Отправляет псевдоэлемент на задний план */
 }
 
 .teacher-container {
+
+    margin: 0 auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
+    gap: 40px;
 }
 
 .teacher-container h2 {
@@ -17,33 +38,66 @@
 }
 
 .teacher-one {
-    max-width: 278px;
+    width: 300px;
+    position: relative;
+}
+
+.teacher-one-text {
+    position: absolute;
+    top: 88px;
+    width: 100%;
+    text-align: center;
+}
+
+.teacher-one-arrow {
+    position: absolute;
+    top: 155px;
+    right: 20px;
+}
+
+.teacher-one-chart {
+    position: absolute;
+    left: 19px;
+    bottom: 81px;
 }
 
 .teacher-two {
-    max-width: 380px;
+    width: 300px;
+    position: relative;
+}
+
+.teacher-one-text-one {
+    position: absolute;
+    top: 88px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.teacher-one-text-two {
+    position: absolute;
+    bottom: 16px;
+    text-align: center;
+}
+
+.teacher-one-arrow-top {
+    position: absolute;
+    top: 161px;
+}
+
+.teacher-one-arrow-bot {
+    position: absolute;
+    bottom: 55px;
+    left: -45px;
 }
 
 .teacher-block {
-    position: relative; /* Это нужно для корректного позиционирования псевдоэлемента */
-    background: var(--periwinkle);
-    border-radius: 25px;
-    padding: 28px 28px 0 28px;
-    z-index: 99; /* Устанавливаем порядок наложения основного блока выше, чем у фона */
+    width: 379px;
+    height: 460px;
 }
 
-.teacher-block img {
-    z-index: 999;
+.teacher-block-name {
+    font-weight: 500;
+    text-align: center;
+    padding-top: 16px;
 }
 
-.teacher-block-after {
-    position: absolute;
-    top: -10px; /* Смещение вниз */
-    left: 10px; /* Смещение вправо */
-    width: 100%;
-    height: 100%;
-    background: var(--yellow);
-    border-radius: 25px;
-    transform: rotate(3deg); /* Устанавливаем наклон */
-    z-index: 1; /* Размещаем под основным блоком */
-}

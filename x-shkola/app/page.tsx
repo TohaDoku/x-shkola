@@ -9,6 +9,10 @@ import FreeCourse from "./components/FreeCourse/FreeCourse";
 import Offer from "./components/Offer/Offer";
 import CreepingLine from "./components/CreepingLine/CreepingLine";
 import Teacher from "./components/Teacher/Teacher";
+import Reviews from "@/app/components/Reviews/Reviews";
+import Form from "@/app/components/Form/Form";
+import QA from "@/app/components/QA/QA";
+import Footer from "@/app/components/Footer/Footer";
 
 export default function Home() {
   return (
@@ -21,6 +25,10 @@ export default function Home() {
       <Offer />
       <CreepingLine />
       <Teacher />
+      <Reviews />
+      <Form />
+      <QA />
+      <Footer />
     </div>
   );
 }

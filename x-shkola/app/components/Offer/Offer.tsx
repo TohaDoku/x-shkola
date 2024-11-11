@@ -4,7 +4,7 @@ import Image from 'next/image';
 export default function Offer() {
   return (
     <>
-    <section className='offer'>
+    <section id='offer' className='offer'>
         <div className="container">
             <div className="offer-container">
                 <Image
