@@ -24,6 +24,6 @@ export async function POST(req) {
             return new Response(JSON.stringify({ error: 'Ошибка при отправке в Telegram' }), { status: response.status });
         }
     } catch (error) {
-        return new Response(JSON.stringify({ error: 'Ошибка сервера' }), { status: 500 });
+        return new Response(JSON.stringify({ error: `Ошибка сервера: ${error}` }), { status: 500 });
     }
 }

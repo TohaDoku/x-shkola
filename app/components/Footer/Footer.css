@@ -18,7 +18,9 @@
 }
 
 .footer-container {
-    background: var(--grey);
     padding: 48px 130px 98px 130px;
     border-radius: 25px 25px 0 0;
+    background: var(--grey);
+    max-width: 1440px;
+    margin: 0 auto;
 }

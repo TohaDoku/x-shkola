@@ -2,6 +2,7 @@
 
 // components/AccordionItem.js
 import { useState } from 'react';
+import Image from "next/image";
 
 export default function AccordionItem({ question, answer, img }) {
     const [isOpen, setIsOpen] = useState(false);
@@ -14,10 +15,10 @@ export default function AccordionItem({ question, answer, img }) {
         <div className={`accordion-item ${isOpen ? 'open' : ''}`}>
             <button onClick={toggleAccordion} className="accordion-question">
                 <span>
-                    <img width="36" height="36" src={img} alt="Изображение аккордеона" />
+                    <Image width="36" height="36" src={img} alt="Изображение аккордеона" />
                     <h3>{question}</h3>
                 </span>
-                <img
+                <Image
                     src={isOpen ? '/up.svg' : '/down.svg'}
                     alt={isOpen ? 'Закрыть' : 'Открыть'}
                     className="accordion-arrow"
