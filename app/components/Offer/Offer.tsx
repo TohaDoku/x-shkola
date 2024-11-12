@@ -8,7 +8,7 @@ export default function Offer() {
         <div className="container">
             <div className="offer-container">
                 <Image
-                  src="/plane2.svg"
+                  src="/Plane.svg"
                   width={168}
                   height={176}
                   alt="Линия"
