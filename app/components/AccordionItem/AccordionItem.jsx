@@ -15,7 +15,7 @@ export default function AccordionItem({ question, answer, img }) {
         <div className={`accordion-item ${isOpen ? 'open' : ''}`}>
             <button onClick={toggleAccordion} className="accordion-question">
                 <span>
-                    <Image width="36" height="36" src={img} alt="Изображение аккордеона" />
+                    <Image width="36" height="36" src={img} alt="Изображение аккордеона" unoptimized />
                     <h3>{question}</h3>
                 </span>
                 <Image

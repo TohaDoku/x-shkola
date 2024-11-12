@@ -13,6 +13,7 @@ export default function Math() {
                     width={213}
                     height={82}
                     alt="Формула"
+                    unoptimized
                 />
                 <Image
                     src="/Vector1.svg"
@@ -20,6 +21,7 @@ export default function Math() {
                     height={26}
                     alt="Стрелка влево"
                     className='math-left'
+                    unoptimized
                 />
                 <Image
                     src="/Vector2.svg"
@@ -27,6 +29,7 @@ export default function Math() {
                     height={26}
                     alt="Стрелка вправо"
                     className='math-right'
+                    unoptimized
                 />
                 <div className="math-cards">
                     <div className="math-card">
@@ -36,6 +39,7 @@ export default function Math() {
                                 width={136}
                                 height={136}
                                 alt="Стрелка вправо"
+                                unoptimized
                             />
                             <span>01</span>
                         </div>
@@ -52,6 +56,7 @@ export default function Math() {
                                 width={136}
                                 height={136}
                                 alt="Стрелка вправо"
+                                unoptimized
                             />
                             <span>02</span>
                         </div>

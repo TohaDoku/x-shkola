@@ -40,6 +40,7 @@ export default function Education() {
                                     width={164}
                                     height={164}
                                     alt="Изображение карточки"
+                                    unoptimized
                                 />
                             </div>
                         </div>
@@ -87,6 +88,7 @@ export default function Education() {
                                     width={120}
                                     height={120}
                                     alt="Компьютер"
+                                    unoptimized
                                 />
                             </div>  
                             

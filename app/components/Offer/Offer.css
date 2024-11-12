@@ -48,7 +48,7 @@
 .offer-body {
     display: flex;
     justify-content: flex-end;
-    gap: 68;
+    gap: 68px;
 }
 
 .offer-one, .offer-free {

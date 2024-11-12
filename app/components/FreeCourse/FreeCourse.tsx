@@ -14,6 +14,7 @@ export default function FreeCourse() {
                   height={170}
                   alt="qr code"
                   className='paper'
+                  unoptimized
                 />
                 <Image
                   src="/Line6.svg"
@@ -54,7 +55,7 @@ export default function FreeCourse() {
                       width={180}
                       height={180}
                       alt="qr code"
-                      
+                      unoptimized
                     />
                 </div>
             </div>

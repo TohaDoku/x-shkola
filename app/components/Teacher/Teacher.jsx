@@ -29,6 +29,7 @@ export default function Teacher() {
                   width={379}
                   height={460}
                   alt="Линия"
+                  unoptimized
                 />
                 <h3 className='teacher-block-name'>Никольский Владислав</h3>
             </div>

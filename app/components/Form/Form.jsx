@@ -94,6 +94,7 @@ export default function Form() {
                         width={150}
                         height={156}
                         alt="Изображение карточки"
+                        unoptimized
                     />
                 </form>
             </div>
