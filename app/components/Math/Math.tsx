@@ -32,7 +32,7 @@ export default function Math() {
                     <div className="math-card">
                         <div className="math-card-img">
                             <Image
-                                src="/free.png"
+                                src="/free.webp"
                                 width={136}
                                 height={136}
                                 alt="Стрелка вправо"
@@ -48,7 +48,7 @@ export default function Math() {
                     <div className="math-card">
                         <div className="math-card-img">
                             <Image
-                                src="/one.png"
+                                src="/one.webp"
                                 width={136}
                                 height={136}
                                 alt="Стрелка вправо"

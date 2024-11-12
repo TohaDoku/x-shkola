@@ -34,7 +34,7 @@ export default function Main() {
                 <div className="main-cards">
                     <div className="main-card">
                         <Image
-                          src="/one.png"
+                          src="/one.webp"
                           width={136}
                           height={136}
                           alt="Параллелограм"
@@ -46,7 +46,7 @@ export default function Main() {
                     </div>
                     <div className="main-card">
                         <Image
-                          src="/two.png"
+                          src="/two.webp"
                           width={106}
                           height={106}
                           alt="Параллелограм"
@@ -57,7 +57,7 @@ export default function Main() {
                     </div>
                     <div className="main-card">
                         <Image
-                          src="/free.png"
+                          src="/free.webp"
                           width={136}
                           height={136}
                           alt="Параллелограм"
@@ -68,7 +68,7 @@ export default function Main() {
                     </div>
                     <div className="main-card">
                         <Image
-                          src="/four.png"
+                          src="/four.webp"
                           width={136}
                           height={136}
                           alt="Параллелограм"
