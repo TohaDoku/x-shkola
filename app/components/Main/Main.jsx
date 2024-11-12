@@ -38,6 +38,7 @@ export default function Main() {
                           width={136}
                           height={136}
                           alt="Параллелограм"
+                          unoptimized
                         />
                         <h3>
                             Поднимем уровень
@@ -50,6 +51,7 @@ export default function Main() {
                           width={106}
                           height={106}
                           alt="Параллелограм"
+                          unoptimized
                         />
                         <h3>
                             Пройдем все этапы ЕГЭ вместе
@@ -61,6 +63,7 @@ export default function Main() {
                           width={136}
                           height={136}
                           alt="Параллелограм"
+                          unoptimized
                         />
                         <h3>
                             Поможем в решении домашек в школе
@@ -72,6 +75,7 @@ export default function Main() {
                           width={136}
                           height={136}
                           alt="Параллелограм"
+                          unoptimized
                         />
                         <h3>
                             Отработаем пробник <br />
