@@ -71,3 +71,17 @@
     font-weight: 700;
     color: var(--orange);
 }
+
+@media (max-width: 1119px) {
+    .math-container {
+        padding: 64px 0;
+    }
+    .math-left {
+        left: 250px;
+        width: 52px;
+    }
+    .math-right {
+        left: 350px;
+        width: 52px;
+    }
+}

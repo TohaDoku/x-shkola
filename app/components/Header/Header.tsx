@@ -1,4 +1,5 @@
 import './Header.css'
+import MobileMenu from "@/app/components/MobileMenu/MobileMenu";
 
 export default function Header() {
   return (
@@ -18,7 +19,9 @@ export default function Header() {
                 </nav>
                 <div className='header-phone'>
                     +7 495 487-01-77
+                    <MobileMenu />
                 </div>
+
             </div>
             
         </div>

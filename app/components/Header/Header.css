@@ -33,3 +33,28 @@
 .header-phone {
     padding-right: 28px;
 }
+
+.mobile-menu-img {
+    display: none;
+}
+
+@media (max-width: 1119px) {
+    .header {
+
+        height: 114px;
+        padding: 30px 0;
+    }
+    .header-nav {
+        display: none;
+    }
+
+    .header-phone {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .mobile-menu-img {
+        display: block;
+    }
+}

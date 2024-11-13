@@ -58,7 +58,7 @@ export default function Reviews() {
     };
 
     return (
-        <div className="reviews">
+        <div id="reviews" className="reviews">
             <div className="">
                 <div className="reviews-container">
                     <div className="reviews-header">

@@ -49,9 +49,12 @@
 
 .paper {
     position: absolute;
-    right: 0px;
+    right: 0;
     top: -84px;
     z-index: 99;
+    transform: translate(100%, -100%) rotate(20deg); /* Начальное положение за экраном */
+    opacity: 0;
+    transition: transform 2s ease, opacity 2s ease;
 }
 
 .line-six {
@@ -59,4 +62,19 @@
     right: -230px;
     top: -160px;
     z-index: 99;
+    stroke-dasharray: 300; /* Задается в зависимости от длины линии */
+    stroke-dashoffset: 300;
+    opacity: 0;
+    transition: stroke-dashoffset 2s ease, opacity 2s ease;
+}
+
+/* Активные классы для запуска анимации */
+.paper.active {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.line-six.active {
+    stroke-dashoffset: 0;
+    opacity: 1;
 }

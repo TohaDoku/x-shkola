@@ -37,16 +37,37 @@
     text-align: center;
 }
 
-.line {
-    position: absolute;
-    top: 90px;
-    left: -60px;
+.main-block {
+    display: flex;
+    gap: 20px;
 }
 
 .plane {
     position: absolute;
-    top: 166px;
-    left: 0;
+    top: 420px;
+    left: 30px;
+    transform: translate(-100%, -100%) rotate(20deg); /* Начальная позиция */
+    opacity: 0;
+    transition: transform 2s ease-out, opacity 2s ease-out;
+}
+
+.plane.active {
+    transform: translate(0, -50px) rotate(0deg); /* Окончательная позиция */
+    opacity: 1;
+}
+
+.line {
+    position: absolute;
+    top: 290px;
+    left: -55px;
+    opacity: 0; /* Изначально скрыта */
+    transform: translate(-100%, -100%) rotate(20deg); /* Смещаем её немного влево */
+    transition: transform 1s ease-out, opacity 1s ease-out;
+}
+
+.line.active {
+    opacity: 1; /* Плавное появление */
+    transform: translateX(0); /* Возвращаем на место */
 }
 
 .rectangle {
@@ -57,7 +78,7 @@
 
 .main-cards {
     width: 100%;
-    padding: 84px 0;
+    padding: 48px 0 84px 0;
     display: flex;
     justify-content: space-between;
     gap: 20px;
@@ -74,4 +95,41 @@
 
 .main-card h3 {
     text-align: center;
+}
+
+@media (max-width: 1119px) {
+    .main-block {
+        flex-direction: column-reverse;
+        align-items: center;
+        padding-top: 52px;
+    }
+    .main-container h1 {
+        padding: 32px 0 46px;
+    }
+    .main-container h2 {
+        padding-bottom: 16px;
+    }
+    .main-cards {
+        padding: 64px 83px;
+        display: flex;
+        gap: 40px;
+        flex-wrap: wrap;
+    }
+    .main-card {
+        width: calc(50% - 20px);
+    }
+
+    .plane {
+        top: 764px;
+        left: 70px;
+        width: 76px;
+        height: 76px;
+    }
+
+    .line {
+        top: 643px;
+        left: 8px;
+        width: 70px;
+        height: 100px;
+    }
 }
