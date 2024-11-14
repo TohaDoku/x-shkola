@@ -13,7 +13,7 @@
     background-image: url('./../../../public/bg.webp');
     background-repeat: repeat;
     background-size: 20%;
-    background-position: -10px -10px;
+    background-position: -10px -15px;
     opacity: 0.3; /* Установите нужный уровень прозрачности */
     z-index: -1; /* Отправляет псевдоэлемент на задний план */
 }
@@ -92,3 +92,23 @@
         padding: 52px 20px 0 20px;
     }
 }
+
+@media (max-width: 1119px) {
+    .offer {
+        margin-top: 0;
+    }
+
+    .offer::before {
+        background-position: -10px -15px;
+    }
+
+    .offer-container {
+        padding: 0;
+    }
+
+    .offer-header p {
+        padding-top: 12px;
+        padding-bottom: 32px;
+    }
+}
+
