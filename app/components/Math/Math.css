@@ -76,12 +76,32 @@
     .math-container {
         padding: 64px 0;
     }
+    .math-container h2 {
+        padding-bottom: 64px;
+    }
     .math-left {
-        left: 250px;
-        width: 52px;
+        top: 116px;
+        left: 245px;
+        width: 42px;
     }
     .math-right {
-        left: 350px;
-        width: 52px;
+        top: 116px;
+        left: 440px;
+        width: 42px;
+    }
+    .math-formula {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 156px;
+    }
+
+    .math-card-img {
+        position: relative;
+        width: 108px;
+    }
+
+    .math-card-img span {
+        font-size: 40px;
     }
 }

@@ -13,6 +13,7 @@ export default function Math() {
                     width={213}
                     height={82}
                     alt="Формула"
+                    className="math-formula"
                     unoptimized
                 />
                 <Image

@@ -1,6 +1,22 @@
 .free-course {
+    position: relative;
     padding: 32px 0;
     max-height: 436px;
+}
+
+.free-course::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('./../../../public/bg.webp');
+    background-repeat: repeat;
+    background-size: 20%;
+    background-position: -10px -10px;
+    opacity: 0.3; /* Установите нужный уровень прозрачности */
+    z-index: -1; /* Отправляет псевдоэлемент на задний план */
 }
 
 .free-course-container {
@@ -77,4 +93,60 @@
 .line-six.active {
     stroke-dashoffset: 0;
     opacity: 1;
+}
+
+@media (max-width: 1119px) {
+    .free-course {
+        padding-top: 0;
+        padding-bottom: 85px;
+    }
+
+    .paper, .line-six {
+        display: none;
+    }
+
+    .free-course-container {
+        padding: 32px 28px;
+    }
+
+    .course-text {
+        margin-bottom: 20px;
+        max-width: 423px;
+    }
+
+    .course-qr {
+        align-items: center;
+        gap: 16px;
+    }
+
+    .course-qr img {
+        min-width: 180px;
+        min-height: 180px;
+    }
+
+    .course-rounds {
+        top: 0;
+        right: 217px;
+        gap: 12px;
+        max-height: 100%;
+    }
+
+    .course-rounds .course-small:first-child,
+    .course-rounds .course-small:nth-child(2) {
+        display: none;
+    }
+
+    .course-big:first-child {
+        width: 56px;
+        height: 28px;
+        border-radius: 0 0 50px 50px;
+        background: var(--beige);
+    }
+
+    .course-big:last-child {
+        width: 56px;
+        height: 28px;
+        border-radius: 50px 50px 0 0;
+        background: var(--beige);
+    }
 }

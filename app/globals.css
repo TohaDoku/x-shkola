@@ -176,4 +176,8 @@ h3 {
     .container {
         max-width: 728px;
     }
+
+    br {
+        display: none;
+    }
 }
