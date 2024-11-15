@@ -40,9 +40,11 @@
 
 @media (max-width: 1119px) {
     .header {
-
         height: 114px;
         padding: 30px 0;
+    }
+    .header-logo {
+        width: 151px;
     }
     .header-nav {
         display: none;
@@ -56,5 +58,19 @@
 
     .mobile-menu-img {
         display: block;
+    }
+}
+
+@media (max-width: 575px) {
+    .header-container {
+        height: 36px;
+    }
+    .header-logo {
+        width: 112px;
+        font-size: 18px;
+        padding: 6px 12px;
+    }
+    .header-phone {
+        font-size: 11px;
     }
 }

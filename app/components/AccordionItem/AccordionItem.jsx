@@ -18,6 +18,7 @@ export default function AccordionItem({ question, answer, img }) {
                     <Image width="36" height="36" src={img} alt="Изображение аккордеона" unoptimized />
                     <h3>{question}</h3>
                 </span>
+                <div>
                 <Image
                     src={isOpen ? '/up.svg' : '/down.svg'}
                     alt={isOpen ? 'Закрыть' : 'Открыть'}
@@ -25,6 +26,7 @@ export default function AccordionItem({ question, answer, img }) {
                     width="24"
                     height="24"
                 />
+                </div>
             </button>
             {isOpen && (
                 <div className="accordion-answer">

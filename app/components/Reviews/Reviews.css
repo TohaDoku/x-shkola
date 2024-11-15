@@ -27,6 +27,7 @@
 .reviews-header h2 {
     text-align: center;
     margin-bottom: 48px;
+    color: var(--dark-green);
 }
 
 .reviews-body {
@@ -94,4 +95,52 @@
 
 .dot.active {
     background-color: var(--orange);
+}
+
+.review-ratings {
+    display: flex;
+    gap: 4px;
+    padding-bottom: 21px;
+}
+
+@media (max-width: 1119px) {
+    .reviews {
+        padding: 0 0 64px;
+    }
+    .reviews-container {
+        max-width: 1440px;
+        margin: 0 auto;
+        padding-left: 20px;
+    }
+    .review {
+        padding: 20px 28px;
+        min-width: 474px;
+        height: 267px;
+    }
+}
+
+@media (max-width: 767px) {
+    .review-orange {
+        border: 3px dashed var(--orange);
+    }
+
+    .review-orange:hover {
+        border: 3px solid var(--orange);
+    }
+
+    .review-yellow {
+        border: 3px dashed var(--yellow);
+    }
+
+    .review-yellow:hover {
+        border: 3px solid var(--yellow);
+    }
+
+    .review-periwinkle {
+        border: 3px dashed var(--periwinkle);
+    }
+
+    .review-periwinkle:hover {
+        border: 3px solid var(--periwinkle);
+    }
 }

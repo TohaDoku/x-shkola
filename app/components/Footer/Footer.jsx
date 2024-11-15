@@ -85,8 +85,8 @@ export default function Footer() {
                                     <p>+7 495 487 01 77</p>
                                 </span>
                                 <span>
-                                    <a className='mini' href="">Договор публичной оферты</a> <br/>
-                                    <a className='mini' href="">Политика конфиденциальности</a>
+                                    <a className='mini' href="https://x-shkola.ru/docs/oferta">Договор публичной оферты</a> <br/>
+                                    <a className='mini' href="https://x-shkola.ru/docs/policy">Политика конфиденциальности</a>
                                 </span>
                             </div>
                         </div>

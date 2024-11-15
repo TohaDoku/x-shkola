@@ -133,3 +133,56 @@
         height: 100px;
     }
 }
+
+@media (max-width: 767px) {
+    .plane {
+        top: 834px;
+        left: 55px;
+        width: 76px;
+        height: 76px;
+    }
+
+    .line {
+        top: 715px;
+        left: -5px;
+        width: 70px;
+        height: 100px;
+    }
+    .main-cards {
+        padding: 64px 0;
+        display: flex;
+        gap: 40px;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 575px) {
+    .main-block {
+        padding-top: 24px;
+    }
+    .main-container h1 {
+        padding: 20px 0 16px;
+    }
+    .main-card {
+        width: 100%;
+    }
+    .plane {
+        top: 700px;
+        left: 45px;
+        width: 76px;
+        height: 76px;
+    }
+    .line {
+        top: 580px;
+        left: -15px;
+        width: 70px;
+        height: 100px;
+    }
+    .main-card img {
+        width: 64px;
+        height: 64px;
+    }
+    .main-card h3 br.tablet-br {
+        display: none;
+    }
+}

@@ -6,6 +6,8 @@
     background-color: var(--yellow); /* Цвет фона */
     padding: 10px 0;
     display: flex;
+    align-items: center;
+    height: 54px;
   }
   
   .creeping-line .content {
@@ -28,4 +30,9 @@
       transform: translateX(-100%);
     }
   }
-  
+
+  @media (max-width: 1119px) {
+      .creeping-line {
+          height: 48px;
+      }
+  }

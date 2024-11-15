@@ -23,7 +23,6 @@
 }
 
 .teacher-container {
-
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -31,10 +30,11 @@
     gap: 40px;
 }
 
-.teacher-container h2 {
+.teacher h2 {
     color: var(--dark-green);
     text-align: center;
     width: 100%;
+    padding-bottom: 48px;
 }
 
 .teacher-one {
@@ -101,3 +101,119 @@
     padding-top: 16px;
 }
 
+.teacher-one-arrow-bot-mobile {
+    display: none;
+}
+
+@media (max-width: 1119px) {
+    .teacher {
+        padding: 60px 0;
+    }
+    .teacher h2 {
+        padding-bottom: 32px;
+    }
+    .teacher-block {
+        text-align: center;
+        white-space: nowrap;
+    }
+    .teacher-block img {
+        width: 229px;
+    }
+    .teacher-container {
+        flex-wrap: nowrap;
+        gap: 16px;
+    }
+    .teacher-block {
+        width: unset;
+        height: unset;
+    }
+    .teacher-one, .teacher-two {
+        max-width: 260px;
+    }
+    .teacher-one-chart {
+        width: 90px;
+        height: 76px;
+        left: 83px;
+        bottom: 49px;
+    }
+    .teacher-one-text {
+        top: 50px;
+        right: -10px;
+    }
+    .teacher-one-text-one {
+        top: 10px;
+        white-space: wrap;
+    }
+    .teacher-one-text-two {
+        bottom: 86px;
+    }
+    .teacher-one-arrow {
+        width: 40px;
+        top: 100px;
+        right: 0;
+    }
+    .teacher-one-arrow-top {
+        top: 71px;
+        width: 40px;
+    }
+    .teacher-one-arrow-bot {
+        display: none;
+    }
+    .teacher-one-arrow-bot-mobile {
+        display: block;
+        transform: rotate(180deg);
+        position: absolute;
+        top: 121px;
+    }
+}
+
+@media (max-width: 767px) {
+    .teacher-block {
+        order: 1;
+        padding: 0 20px;
+    }
+    .teacher-one, .teacher-two {
+        order: 2;
+    }
+    .teacher-one-chart {
+        display: none;
+    }
+    .teacher-one-text {
+        top: 0;
+        left: 0;
+        width: 232px;
+    }
+    .teacher-one-text-one {
+        top: 90px;
+        left: -155px;
+        white-space: wrap;
+        width: 248px;
+    }
+    .teacher-one-text-two {
+        bottom: -15px;
+        width: 232px;
+        left: -140px;
+    }
+    .teacher-one-arrow {
+        display: none;
+    }
+    .teacher-one-arrow-top {
+        top: 45px;
+        left: -165px;
+        width: 40px;
+    }
+    .teacher-one-arrow-bot {
+        display: block;
+        transform: scale(1, 1) rotate(-60deg);
+        width: 35px;
+        bottom: 135px;
+        left: -140px;
+    }
+    .teacher-one-arrow-bot-mobile {
+        display: block;
+        transform: rotate(180deg);
+        position: absolute;
+        top: 221px;
+        left: -142px;
+    }
+}

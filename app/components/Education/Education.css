@@ -235,3 +235,25 @@
         top: -16px;
     }
 }
+
+@media (max-width: 767px) {
+    .education-container {
+        width: 534px;
+    }
+    .education-one,
+    .education-two,
+    .education-free,
+    .education-four {
+        padding: 16px;
+    }
+    .education-two {
+        height: 238px;
+    }
+    .education-one img {
+        left: 137px;
+        bottom: 55px;
+    }
+    .education-four {
+        padding: 44px 16px;
+    }
+}

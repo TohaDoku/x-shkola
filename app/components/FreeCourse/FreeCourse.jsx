@@ -72,6 +72,8 @@ export default function FreeCourse() {
                         <span className='course-small'></span>
                         <span className='course-small'></span>
                         <span className='course-small'></span>
+                        <span className='course-small course-small-tablet'></span>
+                        <span className='course-small course-small-tablet'></span>
                         <span className='course-big'></span>
                     </div>
                     <div className='course-qr'>

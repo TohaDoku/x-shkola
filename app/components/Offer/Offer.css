@@ -87,6 +87,17 @@
     left: -15px;
 }
 
+.offer-card-mobile {
+    display: none;
+}
+
+.offer-way {
+    display: block;
+}
+.offer-frame {
+    display: none;
+}
+
 @media (max-width: 1439px) {
     .offer-container {
         padding: 52px 20px 0 20px;
@@ -110,5 +121,79 @@
         padding-top: 12px;
         padding-bottom: 32px;
     }
+
+    .offer-free-pk {
+        display: none;
+    }
+
+    .offer-card span {
+        color: var(--orange);
+        font-size: 88px;
+        line-height: 95px;
+        position: unset;
+        left: unset;
+        top: unset;
+    }
+    .offer-body {
+        gap: 0;
+        justify-content: center;
+    }
+    .offer-card {
+        display: flex;
+        flex-direction: column;
+
+    }
+    .offer-card div {
+        display: flex;
+        flex-direction: column;
+        padding: 2px 16px;
+        gap: 16px;
+        min-width: 444px;
+    }
+    .offer-one {
+        gap: 0;
+    }
+    .offer-card-mobile {
+        display: flex;
+    }
+    .offer-two {
+        position: relative;
+    }
+    .offer-way {
+        display: none;
+    }
+    .offer-two {
+        width: 176px;
+        height: 1200px;
+        position: relative;
+    }
+    .offer-frame {
+        display: block;
+        position: absolute;
+        left: -50px;
+        bottom: 0;
+    }
+    .offer-plane {
+        display: none;
+    }
+    .offer-trian {
+        position: absolute;
+        width: 77px;
+        height: 77px;
+        top: 10px;
+        right: 80px;
+    }
 }
 
+@media (max-width: 767px) {
+    .offer-body {
+        justify-content: flex-start;
+    }
+    .offer-frame {
+        left: 70px;
+    }
+    .offer-trian {
+        top: -25px;
+        right: 40px;
+    }
+}

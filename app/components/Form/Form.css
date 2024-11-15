@@ -1,5 +1,21 @@
 .form {
+    position: relative;
     padding: 32px 0;
+}
+
+.form::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('./../../../public/bg.webp');
+    background-repeat: repeat;
+    background-size: 20%;
+    background-position: -10px -15px;
+    opacity: 0.3; /* Установите нужный уровень прозрачности */
+    z-index: -1; /* Отправляет псевдоэлемент на задний план */
 }
 
 .form-app {
@@ -61,4 +77,59 @@
     position: absolute;
     right: 100px;
     bottom: 52px;
+}
+
+@media (max-width: 1119px) {
+    .form {
+        padding: 0;
+    }
+
+    .form-app {
+        height: 495px;
+    }
+
+    .form-header {
+        position: absolute;
+        top: 32px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+    }
+
+    .form-header .form-round:nth-child(2),
+    .form-header .form-round:nth-child(3),
+    .form-header .form-round:nth-child(4) {
+        display: none;
+    }
+
+    .form-app h2 {
+        margin-bottom: 12px;
+    }
+
+    .form-app h3 {
+        margin-bottom: 32px;
+    }
+
+    .form-app img {
+        position: absolute;
+        right: 36px;
+        bottom: 28px;
+        width: 92px;
+        height: 96px;
+    }
+}
+
+@media (max-width: 767px) {
+    .form-input,
+    .form-app .mini {
+        width: 538px;
+    }
+    .form-header .form-round:nth-child(5),
+    .form-header .form-round:nth-child(6) {
+        display: none;
+    }
+    .form-app {
+        height: 525px;
+    }
 }

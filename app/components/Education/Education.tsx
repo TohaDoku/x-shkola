@@ -29,13 +29,15 @@ export default function Education() {
                         <div className="education-one">
                             <h3>Удобная платформа</h3>
                             <p>
-                                Интуитивно понятная платформа <br/>
-                                с возможностью проходить обучение <br/>
-                                в онлайн формате с любого устройства: телефона, планшета <br/>
+                                Интуитивно понятная платформа <br/> <br className="tablet-br"/>
+                                с возможностью проходить обучение <br/> <br className="tablet-br"/>
+                                в онлайн формате с любого <br
+                                className="tablet-br"/> устройства: телефона, планшета <br/><br
+                                className="tablet-br"/>
                                 или компьютера. Доступ ко всем материалам 24/7.
                             </p>
                             <div className="img">
-                                <Image
+                            <Image
                                     src="/white.png"
                                     width={164}
                                     height={164}
@@ -48,11 +50,11 @@ export default function Education() {
                     <div className='education-card-group'>
                         <div className="education-two">
                             <h3>
-                                Закрепление материала
+                                Закрепление материала<br className="tablet-br"/>
                                 и разбор пробников
                             </h3>
                             <p>
-                                Проходите тесты для закрепления материала и выполняйте практические работы с
+                            Проходите тесты для закрепления материала и выполняйте практические работы с
                                 проверкой <br/>
                                 от преподавателя.
                             </p>
@@ -62,7 +64,8 @@ export default function Education() {
                                 Персональный менеджер
                             </h3>
                             <p>
-                                Мы на связи с вами каждый будний день. Поможем даже с домашкой <br/>
+                                Мы на связи с вами каждый будний день. Поможем даже с домашкой <br/><br
+                                className="tablet-br"/>
                                 в школе.
                             </p>
                         </div>

@@ -45,8 +45,8 @@ export default function Main() {
                         />
                         <div className="main-block">
                             <span>
-                                <h1>Курс <br /> по математике</h1>
-                                <h2>Подготовка к ЕГЭ с гарантией <br /> результата.</h2>
+                                <h1>Курс <br /> <br className="tablet-br"/> по математике</h1>
+                                <h2>Подготовка к ЕГЭ с гарантией <br />  <br className="tablet-br"/>результата.</h2>
                                 <h3 className="h3-green">учащимся 10-11 классов</h3>
                             </span>
                             <Image
@@ -105,7 +105,7 @@ export default function Main() {
                                     unoptimized
                                 />
                                 <h3>
-                                    Отработаем пробник <br />
+                                    Отработаем пробник <br/> <br className="tablet-br"/>
                                     и разберем ошибки
                                 </h3>
                             </div>
